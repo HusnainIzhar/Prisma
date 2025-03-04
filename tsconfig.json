@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Projects */
+    // "incremental": true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
+    // "composite": true,                                /* Enable constraints that allow a TypeScript project to be used with project references. */
+    
+    /* Language and Environment */
+    "target": "ES2024",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "lib": ["ES2024", "DOM"],                            /* Specify bundled library declarations for ES2024 features. */
+    
+    /* Modules */
+    "module": "NodeNext",                                /* Use modern module code generation instead of CommonJS. */
+    "moduleResolution": "NodeNext",                      /* Modern module resolution strategy. */
+    "baseUrl": "./",                                     /* Base directory for resolving non-relative module names. */
+    "resolveJsonModule": true,                           /* Enable importing .json files. */
+
+    /* Emit */
+    "sourceMap": true,                                   /* Create source map files for better debugging. */
+    "outDir": "./dist",                                  /* Output directory for compiled files. */
+    
+    /* Interop Constraints */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+
+    /* Type Checking */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    
+    /* Completeness */
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  },
+  "include": ["src/**/*"],                               /* Specify files to include in compilation */
+  "exclude": ["node_modules", "**/*.spec.ts"]            /* Exclude test files and node_modules */
+}
